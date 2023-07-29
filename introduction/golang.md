@@ -100,7 +100,7 @@ a=a[:len(a)-1]
 
 // make创建长度，则通过索引赋值
 a:=make([]int,n)
-a[n]=x
+a[n-1]=x
 // make长度为0，则通过append()赋值
 a:=make([]int,0)
 a=append(a,x)
