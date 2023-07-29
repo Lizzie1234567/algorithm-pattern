@@ -773,11 +773,349 @@ func insertIntoBST(root *TreeNode, val int) *TreeNode {
 ## 练习
 
 - [ ] [maximum-depth-of-binary-tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [balanced-binary-tree](https://leetcode-cn.com/problems/balanced-binary-tree/)
+### 二叉搜索树应用
+
+
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [binary-tree-maximum-path-sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [lowest-common-ancestor-of-a-binary-tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [binary-tree-level-order-traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [binary-tree-level-order-traversal-ii](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [binary-tree-zigzag-level-order-traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
 - [ ] [insert-into-a-binary-search-tree](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/)
+
+      ### 二叉搜索树应用
+
+#### validate-binary-search-tree
+
+[validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+
+思路 1：中序遍历，检查结果列表是否已经有序
+
+思路 2：分治法，判断左 MAX < 根 < 右 MIN
+
+```go
+// v1
+func isValidBST(root *TreeNode) bool {
+    result := make([]int, 0)
+    inOrder(root, &result)
+    // check order
+    for i := 0; i < len(result) - 1; i++{
+        if result[i] >= result[i+1] {
+            return false
+        }
+    }
+    return true
+}
+
+func inOrder(root *TreeNode, result *[]int)  {
+    if root == nil{
+        return
+    }
+    inOrder(root.Left, result)
+    *result = append(*result, root.Val)
+    inOrder(root.Right, result)
+}
+
+
+```
