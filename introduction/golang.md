@@ -119,8 +119,10 @@ b:=byte(num+'0') // '1'
 fmt.Printf("%d%s%c\n", num, str, b) // 111
 
 // 字符串转数字
-num,_:=strconv.Atoi()
-str:=strconv.Itoa()
+
+s := "12345"
+num, _ := strconv.Atoi(s)
+str := strconv.Itoa(num)
 
 ```
 
